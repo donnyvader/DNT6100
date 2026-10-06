@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>Dnt.JigDaily</AssemblyName><Version>1.0.5</Version>
+  </PropertyGroup>
+  <ItemGroup><PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.12" /></ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\7000_ITEM_HUB\Services\AdminAuthService.cs" Link="Common\AdminAuthService.cs" />
+    <Compile Include="..\7000_ITEM_HUB\Services\PersonnelManagement.cs" Link="Common\PersonnelManagement.cs" />
+    <Compile Include="..\Shared\InspectionInspectorDirectory.cs" Link="Common\InspectionInspectorDirectory.cs" />
+    <Compile Include="..\Shared\JigInspectionStatus.cs" Link="Common\JigInspectionStatus.cs" />
+    <None Update="run_6100.bat" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
